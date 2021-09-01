@@ -1,0 +1,73 @@
+body {
+    font-family: calibri;
+    /*background-image: url("/images/Sun with Clouds.jpg");*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-attachment: fixed;
+}
+
+#temperature {
+    text-align: center;
+    color: white;
+    text-shadow: 0px 0px 20px black;
+}
+
+#current-usage {
+    text-align: left;
+    float: left;
+    width: 70%;
+    height: 400px;
+}
+
+#predicted {
+    text-align: right;
+    float: right;
+    width: 20%;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    float: left;
+    text-align: center;
+    width: 100vw;
+}
+
+.row {
+    width: 95vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.middle-row {
+    justify-content: space-between;
+    align-items: normal;
+}
+
+.buttons {
+    margin-top: 25vh;
+    justify-content: center;
+}
+
+.content {
+    display: inline-block;
+}
+
+.header {
+    justify-content: center;
+
+}
+
+#chart_div {
+    text-align: center;
+    float: right;
+}
+
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}

@@ -1,0 +1,262 @@
+body {
+    font-family: calibri;
+    margin: 0;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-attachment: fixed;
+}
+
+/*Index*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 20vh 50vh 30vh;
+    grid-template-areas:
+        "header header"
+        "usage  bill"
+        "buttons buttons";
+    height: 100vh;
+    align-items: center;
+}
+
+header {
+    grid-area: header;
+    /*background: white;*/
+}
+
+header h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 0px 0px 20px black;
+    font-size: 15vh;
+}
+
+section.usage {
+    grid-area: usage;
+    /*background: aqua;*/
+}
+
+section.usage h1 {
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 6vh;
+    text-decoration: underline black;
+}
+
+section.usage h2 {
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 5vh;
+    text-decoration: underline black;
+}
+
+section.bill {
+    grid-area: bill;
+    /*background: green;*/
+}
+
+section.bill h1 {
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 6vh;
+    text-decoration: underline black;
+}
+
+section.bill h2 {
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 5vh;
+    text-decoration: underline black;
+}
+
+section.buttons {
+    grid-area: buttons;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vh;
+}
+
+section.buttons img {
+    height: 20vh;
+}
+
+.comparison:hover {
+    opacity: 90%;
+}
+
+.comparison:active {
+    transform: translateY(4px);
+}
+
+.predicted:hover {
+    opacity: 90%;
+}
+
+.predicted:active {
+    transform: translateY(4px);
+}
+
+/*predicted usage*/
+
+.grid-container-predicted {
+    display: grid;
+    grid-template-columns: 40vw 60vw;
+    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-areas:
+            "back-button back-button"
+            "predicted-usage meter";
+    height: 100vh;
+    align-items: center;
+}
+
+header.back-button {
+    grid-area: back-button;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vh;
+}
+
+header.back-button img {
+    height: 8vh;
+}
+
+.up-button:hover {
+    opacity: 90%;
+}
+
+.up-button:active {
+    transform: translateY(4px);
+}
+
+section.meter {
+    grid-area: meter;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vh;
+}
+
+section.meter img {
+    height: 30vh;
+}
+
+section.predicted-usage {
+    grid-area: predicted-usage;
+}
+
+section.predicted-usage h1 {
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 6vh;
+    text-decoration: underline black;
+}
+
+section.predicted-usage h2 {
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 5vh;
+    text-decoration: underline black;
+}
+
+/*comparison*/
+
+.grid-container-comparison {
+    display: grid;
+    grid-template-columns: 55vw 45vw;
+    grid-template-rows: 10vh 40vh 40vh 10vh;
+    grid-template-areas:
+            "back-button2 back-button2"
+            "today graph"
+            "yesterday graph";
+    height: 100vh;
+    align-items: center;
+}
+
+header.back-button2 {
+    grid-area: back-button2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vh;
+}
+
+header.back-button2 img {
+    height: 8vh;
+}
+
+section.today {
+    grid-area: today
+}
+
+section.today h1 {
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 6vh;
+    text-decoration: underline black;
+}
+
+section.today h2 {
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 5vh;
+    text-decoration: underline black;
+}
+
+section.yesterday {
+    grid-area: yesterday;
+}
+
+section.yesterday h1 {
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 6vh;
+    text-decoration: underline black;
+}
+
+section.yesterday h2 {
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 5vh;
+    text-decoration: underline black;
+}
+
+section.graph {
+    grid-area: graph;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+
+}
+
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}
